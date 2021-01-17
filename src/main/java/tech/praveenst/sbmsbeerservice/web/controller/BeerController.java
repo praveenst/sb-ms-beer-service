@@ -34,7 +34,7 @@ import tech.praveenst.sbmsbeerservice.web.model.BeerDto;
   @PutMapping("/{beerId}")
   public ResponseEntity<BeerDto> updateBeerById(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
     //todo impl
-    return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.NO_CONTENT);
+    return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.PARTIAL_CONTENT);
   }
 
 }
