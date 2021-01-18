@@ -16,11 +16,11 @@ import tech.praveenst.sbmsbeerservice.repositories.BeerRepository;
     this.beerRepository = beerRepository;
   }
 
-
   @Override public void run(String... args) throws Exception {
     loadBeerObjects();
   }
 
+  // add beer objects when spring starts up to seed initial set of data in database
   private void loadBeerObjects() {
     if (beerRepository.count() == 0) {
       beerRepository.save(
