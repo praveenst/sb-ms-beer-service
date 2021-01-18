@@ -27,7 +27,7 @@ import lombok.NoArgsConstructor;
   private Integer quantityOnHand;
   private OffsetDateTime createdDate;
   private OffsetDateTime lastModifiedDate;
-  private Integer version;
+  private Long version;
 
 }
 
